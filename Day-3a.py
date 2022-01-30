@@ -29,9 +29,9 @@ print(''' |   [  | v':    :              |        |_,;c
 
 print("Welcome to Tresure Island, Go and find the Tresure else you will be Alladin")
 
-direction = input("Do you wnat to go to left or right (l,r)").lower()
+direction = input("Do you wnat to go to left or right (left,right)").lower()
 
-if direction == 'l':
+if direction == 'left':
     print(" you are lucky, keep going, go to next level")
 
     swim = input("Lucky you,to go to next level, Do you want to swim or wait for crocodile to pickup?(swim,wait):").lower()
@@ -43,14 +43,7 @@ if direction == 'l':
             print('you are the winner')
         else:
             print('you are killed by hummingbird, you are alladdin,  game over!')
-
-
-
-
-
     else:
         print("you are killed by gold fish, you are Alladin, Game Alladin!")
-
-
 else:
     print("you are hit by an ant, you are Alladin, Game Alladin!")
