@@ -1,7 +1,24 @@
+from os import system, name
+from time import sleep
+
+def clear():
+  
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+  
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
+
 
 import random
 import hangman_words
 from hangman_art import stages,logo
+#from replit import clear
+
+
+
 
 #from hangman_art import logo
 
@@ -26,6 +43,7 @@ end_of_game = False
 while not end_of_game:
 
     guess = input("Guess a Letter:").lower()
+    clear()
 
     for position in range(word_lenth):
         letter = chosen_word[position]
