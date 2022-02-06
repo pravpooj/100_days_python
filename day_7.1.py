@@ -1,66 +1,16 @@
 
 import random
+import hangman_words
+from hangman_art import stages,logo
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+#from hangman_art import logo
+
+print(logo)
+
 
 word_list = ["aardvark", "baboon", "camel"]
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(hangman_words.word_list)
 word_lenth = len(chosen_word)
 print(f"Chosen word is {chosen_word}")
 
