@@ -1,4 +1,5 @@
 
+from ast import Num
 import json
 import requests
 
@@ -7,6 +8,7 @@ import requests
 import json
 from datetime import datetime, time  
 import time
+
 
 
 my_lat = 40.712776
@@ -58,10 +60,9 @@ def is_night():
 
 
 while True:
-    time.sleep(120)
+    time.sleep(1024)
     if is_is_overhead() and is_night():
         print("ISS is Overhead")
-
 
 
 
