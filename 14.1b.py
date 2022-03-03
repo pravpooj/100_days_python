@@ -2,6 +2,7 @@ from calendar import c
 import imp
 from os import name
 import random
+from termios import TIOCPKT_DOSTOP
 from art import hl_logo
 from art import vs
 from game_data import data
@@ -55,3 +56,5 @@ while game_on:
         print(f"Sorry, losser, that's wrong and final score is {score}")
         
 
+
+// TODO
