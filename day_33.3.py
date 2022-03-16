@@ -18,6 +18,8 @@ parameter = {
 response = requests.get ("https://api.sunrise-sunset.org/json", params= parameter)
 response.raise_for_status()
 data = response.json()
+
+
 sunrise = data["results"]["sunrise"].split("T")[1].split(":")[:2]
 sunset =  data["results"]["sunset"].split("T")[1].split(":")[:2]
 
